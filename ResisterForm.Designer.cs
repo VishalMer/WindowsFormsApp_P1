@@ -40,9 +40,13 @@
             this.label5 = new System.Windows.Forms.Label();
             this.cityList = new System.Windows.Forms.ListBox();
             this.resisterBtn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.updateBtn = new System.Windows.Forms.Button();
             this.idTXT = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.deleteBtn = new System.Windows.Forms.Button();
+            this.ShowDataBtn = new System.Windows.Forms.Button();
+            this.DisplayData = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.DisplayData)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -152,23 +156,23 @@
             // 
             // resisterBtn
             // 
-            this.resisterBtn.Location = new System.Drawing.Point(109, 407);
+            this.resisterBtn.Location = new System.Drawing.Point(96, 403);
             this.resisterBtn.Name = "resisterBtn";
-            this.resisterBtn.Size = new System.Drawing.Size(141, 45);
+            this.resisterBtn.Size = new System.Drawing.Size(157, 45);
             this.resisterBtn.TabIndex = 11;
             this.resisterBtn.Text = "Resister";
             this.resisterBtn.UseVisualStyleBackColor = true;
             this.resisterBtn.Click += new System.EventHandler(this.resisterBtn_Click);
             // 
-            // button1
+            // updateBtn
             // 
-            this.button1.Location = new System.Drawing.Point(272, 407);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(157, 45);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Update";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.updateBtn.Location = new System.Drawing.Point(286, 403);
+            this.updateBtn.Name = "updateBtn";
+            this.updateBtn.Size = new System.Drawing.Size(157, 45);
+            this.updateBtn.TabIndex = 12;
+            this.updateBtn.Text = "Update";
+            this.updateBtn.UseVisualStyleBackColor = true;
+            this.updateBtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // idTXT
             // 
@@ -186,14 +190,47 @@
             this.label6.TabIndex = 13;
             this.label6.Text = "Id";
             // 
+            // deleteBtn
+            // 
+            this.deleteBtn.Location = new System.Drawing.Point(286, 474);
+            this.deleteBtn.Name = "deleteBtn";
+            this.deleteBtn.Size = new System.Drawing.Size(157, 45);
+            this.deleteBtn.TabIndex = 15;
+            this.deleteBtn.Text = "Delete";
+            this.deleteBtn.UseVisualStyleBackColor = true;
+            this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
+            // 
+            // ShowDataBtn
+            // 
+            this.ShowDataBtn.Location = new System.Drawing.Point(96, 474);
+            this.ShowDataBtn.Name = "ShowDataBtn";
+            this.ShowDataBtn.Size = new System.Drawing.Size(157, 45);
+            this.ShowDataBtn.TabIndex = 16;
+            this.ShowDataBtn.Text = "Show Data";
+            this.ShowDataBtn.UseVisualStyleBackColor = true;
+            this.ShowDataBtn.Click += new System.EventHandler(this.ShowDataBtn_Click);
+            // 
+            // DisplayData
+            // 
+            this.DisplayData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DisplayData.Location = new System.Drawing.Point(472, 58);
+            this.DisplayData.Name = "DisplayData";
+            this.DisplayData.RowHeadersWidth = 62;
+            this.DisplayData.RowTemplate.Height = 28;
+            this.DisplayData.Size = new System.Drawing.Size(964, 461);
+            this.DisplayData.TabIndex = 17;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(876, 560);
+            this.ClientSize = new System.Drawing.Size(1515, 554);
+            this.Controls.Add(this.DisplayData);
+            this.Controls.Add(this.ShowDataBtn);
+            this.Controls.Add(this.deleteBtn);
             this.Controls.Add(this.idTXT);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.updateBtn);
             this.Controls.Add(this.resisterBtn);
             this.Controls.Add(this.cityList);
             this.Controls.Add(this.label5);
@@ -208,6 +245,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form3";
             this.Text = "Form3";
+            ((System.ComponentModel.ISupportInitialize)(this.DisplayData)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -227,8 +265,11 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ListBox cityList;
         private System.Windows.Forms.Button resisterBtn;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button updateBtn;
         private System.Windows.Forms.TextBox idTXT;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button deleteBtn;
+        private System.Windows.Forms.Button ShowDataBtn;
+        private System.Windows.Forms.DataGridView DisplayData;
     }
 }

@@ -65,5 +65,30 @@ namespace WindowsFormsApp_P1
             conn.Close();
             MessageBox.Show("Updated Successfully!!");
         }
+
+        private void deleteBtn_Click(object sender, EventArgs e)
+        {
+            string query = "delete from sResister where id ='" + Convert.ToInt32(idTXT.Text) + "' ";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            conn.Open();
+            cmd.ExecuteNonQuery();
+            conn.Close();
+            MessageBox.Show("Deleted Successfully!!");
+        }
+
+        private void ShowDataBtn_Click(object sender, EventArgs e)
+        {
+            string query = "select * from sResister ";
+            SqlCommand cmd = new SqlCommand(query, conn);
+
+            conn.Open();
+            //string query = "select * from sResister ";
+            cmd.ExecuteNonQuery();
+            SqlDataAdapter da = new SqlDataAdapter(query,conn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            DisplayData.DataSource = dt;
+            conn.Close();
+        }
     }
 }
