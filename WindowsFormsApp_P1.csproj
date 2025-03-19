@@ -82,6 +82,12 @@
     <Compile Include="Display.Designer.cs">
       <DependentUpon>Display.cs</DependentUpon>
     </Compile>
+    <Compile Include="employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee.Designer.cs">
+      <DependentUpon>employee.cs</DependentUpon>
+    </Compile>
     <Compile Include="ListDemo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Display.resx">
       <DependentUpon>Display.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee.resx">
+      <DependentUpon>employee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListDemo.resx">
       <DependentUpon>ListDemo.cs</DependentUpon>
@@ -138,6 +147,13 @@
     <Content Include="Database1_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="Database2.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database2_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database2.mdf</DependentUpon>
     </Content>
     <Content Include="SResisterDB.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
